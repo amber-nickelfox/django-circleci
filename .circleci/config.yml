@@ -26,7 +26,7 @@ jobs:
           name: connect with instance
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              ssh-keyscan ubuntu@ec2-18-236-91-26.us-west-2.compute.amazonaws.com >> ~/.ssh/known_hosts
+              ssh ubuntu@ec2-18-236-91-26.us-west-2.compute.amazonaws.com >> ~/.ssh/known_hosts
             else
                 echo "No matching branch"
             fi 
