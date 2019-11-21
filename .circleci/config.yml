@@ -19,7 +19,6 @@ jobs:
 
     steps:
       - checkout
-
       - add_ssh_keys:
           fingerprints:
             - "72 79 4C 64 C5 DD 89 F6 F3 73 F7 99 25 E3 0C F8 02 8B 0B 7B"
@@ -55,7 +54,3 @@ jobs:
       # - run:
       #     name: run requirements
       #     commands: pip install -r requirements.txt
-
-      branches:
-        only:
-        - master
