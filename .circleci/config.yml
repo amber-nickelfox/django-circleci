@@ -24,7 +24,7 @@ jobs:
             - "72 79 4C 64 C5 DD 89 F6 F3 73 F7 99 25 E3 0C F8 02 8B 0B 7B"
       - run:
           name: connect with instance
-          command: ssh ubuntu@ec2-18-236-91-26.us-west-2.compute.amazonaws.com
+          command: ssh-keyscan ubuntu@ec2-18-236-91-26.us-west-2.compute.amazonaws.com >> ~/.ssh/known_hosts
       - run:
           name: create a new directory, file and add some text
           command: |
